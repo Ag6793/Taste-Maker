@@ -13,7 +13,7 @@ Recipe finder app with UTAustin Bootcamp
 * When home button clicked, it will always take you back to the homepage 
 
 ## Live Application
-https://dcmccormick.github.io/taste_makers/
+https://ag6793.github.io/Taste-Maker/
 
 ## Acceptance Criteria
 1 When homepage loads User have a choice of 4 protein options
