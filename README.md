@@ -7,7 +7,7 @@ I want to cook something for dinner but I don't know what to cook. With the Tast
  ## Description
  The User can decide between protein and cooking styles to find a wide variety of recipes to try. They can save a list of favorite recipes to reference at a later date and can follow along a youtube video on how to make their desired dish. The User will have a seamless experience getting data from the Spoonacular and YouTube APIs.
 
- ![Homepage of Application](assets/Images/Screenshot_homepage.png)
+ ![Homepage of Application](assets/Images/screenshot-tastemaker.jpg)
 
 ## When user clicks cuisine/dessert
 * Will be presented with four cuisine styles: French, American, German, and Italian
