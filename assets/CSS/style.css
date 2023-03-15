@@ -2,28 +2,26 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color:white;
+  color: white;
   text-align: center;
 }
 
 #header-image {
   height: 30rem;
   width: 100%;
-  
+
 }
 
 .page-1 {
   display: flex;
-  flex-direction:column;
-  align-items:center
+  flex-direction: column;
+  align-items: center
 }
 
 .continuous-1 {
-  background: 
-      linear-gradient(currentColor 0 0) 
-      var(--d, 201%) 100% /200% 3px 
-      no-repeat;
-  transition:0.5s;
+  background:
+    linear-gradient(currentColor 0 0) var(--d, 201%) 100% /200% 3px no-repeat;
+  transition: 0.5s;
 }
 
 .continuous-1:hover {
@@ -39,41 +37,42 @@
 }
 
 /* Hover effect for page 2 btns */
-.page2btn:hover{
+.page2btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*Favorite btn*/
 #favorite-btn {
-  width: 20%;
+  width: 20rem;
+  margin: 10px;
 }
 
 /* Hover effect for favorite btn */
 #favorite-btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
- 
+
 }
 
 /*Home button*/
-.home-btn{
-  margin: 25px;
-  width: 20%;
+.home-btn {
+  width: 20rem;
+  margin: 10px;
 
 }
 
 /* Hover effect for home button */
-.home-btn:hover{
+.home-btn:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*Text formmating for cuisine header*/
 h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 40px; 
+  font-size: 40px;
 }
 
 /* Highlighting effect for food headers */
-.headereffect:hover{
+.headereffect:hover {
   background-color: rgb(0, 0, 0, 0.5);
   width: 50%;
   margin: 0 25%;
@@ -87,7 +86,7 @@ img {
 /*recipe*/
 .recipe {
   color: white;
-  text-align:center;
+  text-align: center;
   padding: 25px 100px;
   font-size: 24px;
 }
@@ -104,13 +103,13 @@ button {
   background-size: 100%;
   width: 35rem;
   font-family: "Dancing Script", cursive;
-  
+
 }
 
 /*Hover effect for the homepage buttons*/
 button:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  
+
 }
 
 #result {
@@ -123,7 +122,6 @@ button:hover {
 #main-image {
   width: 100%;
   height: auto;
-  margin-top: 50px;
   opacity: .6;
 }
 
@@ -166,7 +164,7 @@ footer {
   text-align: center
 }
 
-/* Heading text format*/ 
+/* Heading text format*/
 h1 {
   margin-bottom: 50px;
 }
@@ -183,30 +181,136 @@ h1 {
 
 #title {
   top: -25rem;
- margin: auto;
+  margin: auto;
   text-shadow: 10px 10px 8px black;
   position: relative;
 }
 
-#favList{
+#favList {
   font-size: 25px !important;
 }
 
+@media only screen and (max-width: 1050px) {
+  #title {
+    top: -20rem;
+  }
+
+  a {
+    margin: 25px auto;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #title {
+    top: -16rem;
+  }
+
+  h1#title {
+    font-size: 120px;
+  }
+
+  #favorite-btn {
+    font-size: 25px;
+    width: 20rem;
+  }
+
+  .home-btn {
+    width: 20rem;
+    font-size: 25px;
+  }
+
+  img {
+    height: 18rem;
+    width: fit-content;
+  }
+}
 
 @media only screen and (max-width: 650px) {
+
   /* Media query */
-  h1{
-font-size: 80px;
+  h1#title {
+    font-size: 75px;
   }
 
-  #title{
-    top: 7rem;
-    left: 20%;
+  #title {
+    top: -11rem;
   }
 
-  img{
+  img {
     height: 13rem;
     width: fit-content;
     margin-bottom: 2rem;
   }
+
+  button {
+    font-size: 40px;
+    width: 20rem;
+  }
+
+  a {
+    left: 0%;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+
+  /* Media query */
+  h1#title {
+    font-size: 60px;
+  }
+
+  #title {
+    top: -8rem;
+  }
+
+  img {
+    height: 10rem;
+    width: fit-content;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    font-size: 30px;
+    width: 15rem;
+  }
+
+  a {
+    left: 0%;
+    position: relative;
+    font-size: 20px;
+  }
+
+  #main-image {
+    margin-top: 0;
+  }
+
+  footer {
+    position: absolute;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .recipe {
+    font-size: 10px;
+    padding: 15px;
+  }
+
+  #favorite-btn {
+    font-size: 25px;
+    width: 10rem;
+  }
+
+  .home-btn {
+    width: 10rem;
+    font-size: 25px;
+  }
+
+
 }
