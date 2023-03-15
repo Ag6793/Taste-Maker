@@ -8,9 +8,10 @@ var page6Div = document.createElement("div"); //create dynamic div html element
 var page7Div = document.createElement("div"); //create dynamic div html element
 var homeBtn = document.createElement("button")
 homeBtn.textContent = "Home";
-var favoriteDiv = document.createElement('div')
-var favoriteList = document.createElement('button')
+var favoriteDiv = document.createElement('div');
+var favoriteList = document.createElement('button');
 var divOfChosen //!
+
 
 var page1Div = document.querySelector(".page-1"); //selecting DOM element
 
@@ -19,6 +20,7 @@ var dessertBtn = document.getElementById("dessert");
 var backBtn = document.getElementById("back");
 var mainDiv = document.querySelector("main"); //selecting DOM element
 var favoriteHome = document.getElementById("favoriteHome")
+
 var clearBtn = document.getElementById("clear")
 
 var frenchStyle = document.getElementById("french"); //selecting DOM element
@@ -27,6 +29,8 @@ var spoonApiKey = "185e0d8912b7436abe73d61ec0df8d3c"; //key
 var youTubeApiKey = "AIzaSyACILGJ0q_INibtI19CGtziAvBtf0O-d_I"; //youtube API key
 
 var favoriteArray = []; //to hold array for favorite recipe
+
+
 
 //var recipeInfoUrl = 'https://api.spoonacular.com/recipes/' + id +'/information'
 
@@ -152,6 +156,7 @@ function page4handler(id) {
   favoriteBtn.setAttribute("Id", "favorite-btn"); //sets favoriteBtn class to favorite-btn
   homeBtn.setAttribute("class", "home-btn"); //sets homeBtn class
   homeBtn.textContent = "Home";
+ 
 
 
 
@@ -554,11 +559,13 @@ function displayFavorite(favoriteName) {
 }
 
 
+
 //once the user clicks the 'Cuisine' button, it goes to page2
 cuisineBtn.addEventListener("click", page2handler);
 
 //once the user clicks the 'Dessert' button, it goes to page5
 dessertBtn.addEventListener("click", page5handler);
+
 
 //always display even refresh the page 
 display()
