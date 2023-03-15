@@ -257,7 +257,6 @@ h1 {
 
 
 @media only screen and (max-width: 450px) {
-
   /* Media query */
   h1#title {
     font-size: 60px;
